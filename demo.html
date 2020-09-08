@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*顶部块样式*/
+        
+        header {
+            width: 100%;
+            display: flex;
+        }
+        
+        header>a {
+            flex: 1;
+        }
+        
+        header>a>img {
+            width: 100%;
+        }
+        /*主体内容块样式*/
+        
+        main {
+            width: 100%;
+            padding: 0 10px;
+            box-sizing: border-box;
+        }
+        
+        main>.item {
+            width: 100%;
+            height: 100px;
+            background-color: #57c3ad8c;
+            border-radius: 10px;
+            margin-top: 10px;
+            display: flex;
+        }
+        
+        main>.item:nth-of-type(2) {
+            background-color: rgba(165, 39, 39, 0.459);
+        }
+        
+        main>.item:nth-of-type(3) {
+            background-color: rgba(3, 97, 16, 0.507);
+        }
+        
+        main>.item:nth-of-type(4) {
+            background-color: rgba(126, 146, 15, 0.541);
+        }
+        
+        main>.item>.left {
+            flex: 1;
+        }
+        
+        main>.item>.right {
+            flex: 2;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        
+        main>.item>.right>a {
+            width: 50%;
+            display: block;
+            box-sizing: border-box;
+            border-left: 2px solid #fff;
+            border-bottom: 2px solid #fff;
+            line-height: 50px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        main>.item>.right>a:nth-last-of-type(-n+2) {
+            border-bottom: none;
+        }
+        
+        main>.extra {
+            width: 100%;
+            display: flex;
+        }
+        
+        main>.extra>a {
+            flex: 1;
+        }
+        
+        main>.extra>a>img {
+            width: 100%;
+        }
+        /*底部块样式*/
+        
+        footer {
+            width: 100%;
+            font-size: 13px;
+        }
+        
+        footer>nav {
+            width: 100%;
+            display: flex;
+            border-top: 2px solid black;
+            border-bottom: 2px solid black;
+        }
+        
+        footer>nav>a {
+            flex: 1;
+            line-height: 30px;
+            text-align: center;
+            text-decoration: none;
+        }
+        
+        footer>.link {
+            text-align: center;
+            line-height: 25px;
+        }
+        
+        footer>.copy {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <a href="">
+                <img src="img/QQ图片20200905221927.jpg" alt="">
+            </a>
+        </header>
+        <main>
+            <section class="item">
+                <div class="left"></div>
+                <div class="right">
+                    <a href="">触宝</a>
+                    <a href="">听不见</a>
+                    <a href="">响宝</a>
+                    <a href="">很有精神</a>
+                </div>
+            </section>
+            <section class="item">
+                <div class="left"></div>
+                <div class="right">
+                    <a href="">触宝</a>
+                    <a href="">听不见</a>
+                    <a href="">响宝</a>
+                    <a href="">很有精神</a>
+                </div>
+            </section>
+            <section class="item">
+                <div class="left"></div>
+                <div class="right">
+                    <a href="">触宝</a>
+                    <a href="">听不见</a>
+                    <a href="">响宝</a>
+                    <a href="">很有精神</a>
+                </div>
+            </section>
+            <section class="item">
+                <div class="left"></div>
+                <div class="right">
+                    <a href="">触宝</a>
+                    <a href="">听不见</a>
+                    <a href="">响宝</a>
+                    <a href="">很有精神</a>
+                </div>
+            </section>
+            <section class="extra">
+                <a href="">
+                    <img src="img/1599315180335.png" alt="">
+                </a>
+                <a href="">
+                    <img src="img/QQ图片20200905221642.png" alt="">
+                </a>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <a href="">不准</a>
+                <a href="">不准</a>
+                <a href="">乳触</a>
+            </nav>
+            <p class="link">
+                <a href="">可以</a>
+                <a href="">可以</a>
+                <a href="">弄响</a>
+            </p>
+            <p class="copy">&copy;2020 触宝的爱</p>
+        </footer>
+    </div>
+</body>
+
+</html>
